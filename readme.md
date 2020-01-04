@@ -21,7 +21,7 @@ ln -s myWorkSpace/.zshrc ~/.zshrc
 ```
 sudo apt-get install -y tmux
 ```
-Дополнительно рекомендуется установить Oh My Tmux
+Дополнительно рекомендуется установить Oh My Tmux:
 ```
 cd
 git clone https://github.com/gpakosz/.tmux.git
@@ -32,3 +32,17 @@ cp .tmux/.tmux.conf.local .
 ```
 ln -s myWorkSpace/.tmux.conf.local
 ```
+## Vim
+Для vim, если не установлен - устанавливаем:
+```
+sudo apt-install -y vim
+```
+делаем симлинк для .vimrc:
+```
+ln -s myWorkSpace/.vimrc
+```
+и устанавливаем Vundle:
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+запускаем `vim` и в командном режиме выполняем `:PluginInstall`
